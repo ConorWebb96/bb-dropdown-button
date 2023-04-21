@@ -1,8 +1,8 @@
 # Bb-dropdown-button
-This is a readme for your new Budibase plugin.
+This is a readme for a custom plugin for Budibase.
 
 # Description
-A button that you can add children to as the dropdown.
+A button that you can add children Budibase components to as the dropdown.
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
