@@ -1,0 +1,205 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-dropdown-button",
+    "friendlyName": "Dropdown Button",
+    "description": "A button that you can add children to as the dropdown.",
+    "icon": "Group",
+    "illegalChildren": ["section"],
+    "hasChildren": true,
+    "settings": [
+      {
+        "type": "text",
+        "label": "Button Text",
+        "key": "buttonText",
+        "defaultValue": "A button"
+      },
+      {
+        "type": "select",
+        "label": "Dropdown position",
+        "key": "dPosition",
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "Top",
+            "value": "top"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          },
+          {
+            "label": "Bottom",
+            "value": "bottom"
+          },
+          {
+            "label": "Left",
+            "value": "left"
+          }
+        ],
+        "defaultValue": "bottom"
+      },
+      {
+        "type": "number",
+        "label": "Dropdown Width",
+        "key": "width",
+        "placeholder": 50,
+        "min": 200,
+        "max": 1200,
+        "defaultValue": 200
+      },
+      {
+        "type": "select",
+        "label": "Variant",
+        "key": "type",
+        "showInBar": true,
+        "options": [
+          {
+            "label": "Primary",
+            "value": "primary"
+          },
+          {
+            "label": "Secondary",
+            "value": "secondary"
+          },
+          {
+            "label": "Action",
+            "value": "cta"
+          },
+          {
+            "label": "Warning",
+            "value": "warning"
+          },
+          {
+            "label": "Over background",
+            "value": "overBackground"
+          }
+        ],
+        "defaultValue": "primary"
+      },
+      {
+        "type": "select",
+        "label": "Size",
+        "showInBar": true,
+        "key": "size",
+        "options": [
+          {
+            "label": "Small",
+            "value": "S"
+          },
+          {
+            "label": "Medium",
+            "value": "M"
+          },
+          {
+            "label": "Large",
+            "value": "L"
+          },
+          {
+            "label": "Extra large",
+            "value": "XL"
+          }
+        ],
+        "defaultValue": "M"
+      },
+      {
+        "type": "boolean",
+        "label": "Quiet",
+        "key": "quiet",
+        "showInBar": true,
+        "barIcon": "VisibilityOff",
+        "barTitle": "Quiet variant",
+        "barSeparator": false
+      },
+      {
+        "section": true,
+        "name": "Icon",
+        "settings": [
+          {
+            "type": "icon",
+            "label": "Icon",
+            "key": "icon"
+          },
+          {
+            "type": "select",
+            "label": "Icon Size",
+            "key": "iconSize",
+            "defaultValue": "ri-1x",
+            "options": [
+              {
+                "value": "ri-xxs",
+                "label": "XXS"
+              },
+              {
+                "value": "ri-xs",
+                "label": "XS"
+              },
+              {
+                "value": "ri-sm",
+                "label": "Small"
+              },
+              {
+                "value": "ri-1x",
+                "label": "Medium"
+              },
+              {
+                "value": "ri-lg",
+                "label": "Large"
+              },
+              {
+                "value": "ri-xl",
+                "label": "XL"
+              },
+              {
+                "value": "ri-2x",
+                "label": "2XL"
+              },
+              {
+                "value": "ri-3x",
+                "label": "3XL"
+              },
+              {
+                "value": "ri-4x",
+                "label": "4XL"
+              },
+              {
+                "value": "ri-5x",
+                "label": "5XL"
+              },
+              {
+                "value": "ri-6x",
+                "label": "6XL"
+              },
+              {
+                "value": "ri-7x",
+                "label": "7XL"
+              },
+              {
+                "value": "ri-8x",
+                "label": "8XL"
+              },
+              {
+                "value": "ri-9x",
+                "label": "9XL"
+              },
+              {
+                "value": "ri-10x",
+                "label": "10XL"
+              }
+            ]
+          },
+          {
+            "type": "color",
+            "label": "Icon Color",
+            "key": "iconColor"
+          }
+        ]
+      }
+    ],
+    "context": {
+      "type": "schema"
+    }
+  }
+}
