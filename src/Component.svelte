@@ -3,7 +3,6 @@
 
   const { styleable } = getContext("sdk");
   const component = getContext("component");
-
   // schema exports
   export let buttonText;
   export let dPosition;
@@ -13,13 +12,10 @@
   export let quiet;
   export let newStyles = true
   export let disabled = false
-
-
   // icon exports
   export let icon;
   export let iconColour;
   export let iconSize = "M";
-
   $: iconStyles = {
     ...$component.styles,
     normal: {
@@ -27,11 +23,9 @@
       color: iconColour || "var(--spectrum-global-color-white-900)",
     },
   }
-
   // preset vars to be used later
   let dropdownContentStyle = 'hidden';
   let randomString = "";
-
   onMount(() => {
       // generate random characters on mounted to asigned to buttons later.
       const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -121,13 +115,6 @@
       }
   };
 </script>
-
-<!-- class:spectrum-Button--cta={cta}
-class:spectrum-Button--primary={primary}
-class:spectrum-Button--secondary={secondary}
-class:spectrum-Button--warning={warning}
-class:spectrum-Button--overBackground={overBackground} -->
-
 <div id="dropdown-container-{randomString}" class="dropdown-container" use:styleable={$component.styles}>
     <button 
       id="dropdown-button-{randomString}" on:click={dropdownButtonClicked}
@@ -153,7 +140,6 @@ class:spectrum-Button--overBackground={overBackground} -->
       <slot />
     </div>
 </div>
-
 <style>
     .dropdown-container {
       position: relative;
